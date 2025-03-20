@@ -11,15 +11,16 @@ body {
   background-color: #eeeeee;
 }
 
-button {
+.navbutton {
   background-color: #00adb5;
   padding: 1%;
   border-color:#037e84;
   border-style: double;
   border-radius: 10%;
+  color: #eeeeee;
 }
 
-button:hover{
+.navbutton:hover{
   background-color: #037e84;
   transition: 0.5s;
 }
@@ -67,7 +68,7 @@ main {
 
 .grid img {
   display: block;
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   height: auto;
 }

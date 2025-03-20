@@ -14,20 +14,21 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     <header class="header">
-      <button><a href="index.html"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path></svg></a></button>
+      <a href="index.html" class="navbutton"><i class="fa-solid fa-hand-point-left"></i></a>
       <h1>Kontakt</h1>
-      <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche</p>
+      <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche <i class="fa-solid fa-comments" style="color: #eeeeee;"></i></p>
     </header>
     <main class="container">
       <div class="">
         <label for="name">Dein Name<span style="color: red;">*</span>:</label>
-        <input class="input" type="text" id="name" name="name" required /><br /><br />
+        <input class="input" type="text" id="name" name="name" placeholder="Anja" required /><br /><br />
 
         <label for="email">Email<span style="color: red;">*</span>:</label>
-        <input class="input" type="email" name="email" required /><br /><br />
+        <input class="input" type="email" name="email" placeholder="beispiel@email.com" required /><br /><br />
 
         <label for="category">Kategorie<span style="color: red;">*</span>:</label>
         <select name="Choose category" id="Choose category">
@@ -40,9 +41,9 @@
         </select><br /><br />
 
         <label class="label" for="message">Dein Nachricht<span style="color: red;">*</span>:</label><br />
-        <textarea class="textarea" id="message" name="message" rows="4" required></textarea><br /><br>
+        <textarea class="textarea" id="message" name="message" rows="4" placeholder="sei nett!" required></textarea><br /><br>
         <button type="submit" value="Send">
-          <a href="">Senden</a>
+          <a href="">Senden <i class="fa-solid fa-paper-plane" style="color: #eeeeee;"></i></a>
         </button>
     </div>
     </main>
