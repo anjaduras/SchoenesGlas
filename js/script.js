@@ -5,21 +5,19 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
+// no idea whatsoever
 function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
-    // Fetching the users data from a JSON file (simulated as a variable here)
     fetch('users.json')
         .then(response => response.json())
         .then(data => {
             const user = data.find(user => user.email === email && user.password === password);
             if (user) {
-                // If credentials match, redirect to the "only for workers" page
-                window.location.href = "workers.html"; // Replace with your restricted page
+                window.location.href = "workers.html"; 
             } else {
-                // Display error message if credentials don't match
                 errorMessage.style.display = "block";
             }
         })

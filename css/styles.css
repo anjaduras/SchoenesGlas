@@ -1,7 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Montserrat:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sonsie+One&display=swap');
+
 * {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+}
+
+h1{
+  font-family: "Sonsie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: yellow;
+}
+
+header{
+  padding: 5%;
+  background-color: black;
+  color: white;
+}
+
+main{
+  padding: 5%;
 }
 
 .grid {
@@ -23,7 +41,7 @@
 }
 
 .footer {
-  position: fixed;
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
