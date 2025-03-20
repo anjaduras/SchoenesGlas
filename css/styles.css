@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
+  font-family: "Roboto Mono", monospace;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
 }
 
 h1{
-  font-family: "Sonsie One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color: yellow;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 header{
@@ -22,9 +25,19 @@ main{
   padding: 5%;
 }
 
+.startbutton{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 208, 0);
+  border-radius: 5%;
+}
+.startbutton a {
+  color: black;
+}
+
 .grid {
   display: grid;
-  gap: 10px;
+  gap: 40px;
   max-width: 400px;
   margin: auto;
   text-align: center;
@@ -41,9 +54,7 @@ main{
 }
 
 .footer {
-  position:fixed;
-  left: 0;
-  bottom: 0;
+  margin-bottom: 0%;
   width: 100%;
   background-color: black;
   color: white;
