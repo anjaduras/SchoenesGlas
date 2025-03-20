@@ -18,23 +18,17 @@
   <body>
     <header class="header">
       <button><a href="index.html"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path></svg></a></button>
-      <h1>Kontakt</h1>
+      <h1>Login</h1>
       <h2>Lorem ipsum lorem ipsum</h2>
     </header>
     <main class="container">
-      <div class="">
-        <label for="name">Your name (required):</label>
-        <input class="input" type="text" id="name" name="name" required /><br /><br />
-
-        <label class="label" for="email">Your email (required):</label>
-        <input class="input" type="email" id="email" name="email" required /><br /><br />
-
-        <label class="label" for="message">Your message (required):</label><br />
-        <textarea class="textarea" id="message" name="message" rows="4" required></textarea><br />
-        <button type="submit" value="Send">
-          <p>Send</p>
-        </button>
-    </div>
+        <div class="login-container">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button onclick="login()">Login</button>
+            <p id="error-message" style="color: red; display: none;">Invalid credentials, please try again.</p>
+        </div>
     </main>
     <footer class="footer" onload="updateTime()">
       <p>©Gruppe 6, 2025</p>
