@@ -19,17 +19,17 @@
     <header class="header">
       <button><a href="index.html"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path></svg></a></button>
       <h1>Kontakt</h1>
-      <h2>Unterschrift</h2>
+      <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche</p>
     </header>
     <main class="container">
       <div class="">
-        <label for="name">Dein Name*:</label>
+        <label for="name">Dein Name<span style="color: red;">*</span>:</label>
         <input class="input" type="text" id="name" name="name" required /><br /><br />
 
-        <label for="email">Email*:</label>
+        <label for="email">Email<span style="color: red;">*</span>:</label>
         <input class="input" type="email" name="email" required /><br /><br />
 
-        <label for="category">Kategorie*:</label>
+        <label for="category">Kategorie<span style="color: red;">*</span>:</label>
         <select name="Choose category" id="Choose category">
           <option value="Brillen">Brillen</option>
           <option value="Kontaktlinsen">Kontaktlinsen</option>
@@ -39,8 +39,8 @@
           <option value="Sonstiges">Sonstiges</option>
         </select><br /><br />
 
-        <label class="label" for="message">Dein Nachricht*:</label><br />
-        <textarea class="textarea" id="message" name="message" rows="4" required></textarea><br />
+        <label class="label" for="message">Dein Nachricht<span style="color: red;">*</span>:</label><br />
+        <textarea class="textarea" id="message" name="message" rows="4" required></textarea><br /><br>
         <button type="submit" value="Send">
           <a href="">Senden</a>
         </button>
