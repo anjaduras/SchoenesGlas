@@ -11,16 +11,42 @@ body {
   background-color: #fffdf5;
 }
 
+/* Header and Navigation */
+header {
+  padding: 100px;
+  background-color: #00174c;
+  color: #fffdf5;
+}
+
+nav {
+  margin-top: 1%;
+  text-align: right;
+}
+
+/* Typography */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-top: 3%;
+}
+
+.subheader {
+  color: #809bce;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Button Styles */
 .navbutton {
-  background-color: #4A90E2;
+  background-color: #4a90e2;
   padding: 1%;
-  border-color:#037e84;
+  border-color: #037e84;
   border-style: double;
   border-radius: 10%;
   color: #eeeeee;
 }
 
-.navbutton:hover{
+.navbutton:hover {
   background-color: #034c84;
   transition: 0.5s;
 }
@@ -30,35 +56,9 @@ button a {
   font-weight: 800;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-}
-
-.subheader {
-  color: #809BCE;
-  font-size: 20px;
-  font-weight: 600;
-}
-nav{
-  margin-top: 1%;
-  text-align: right;
-}
-header {
-  padding: 100px;
-  background-color: #00174c;
-  color: #fffdf5;
-}
-
+/* Layout */
 main {
   padding: 5%;
-}
-
-.startbutton {
-  width: 200px;
-  height: 200px;
-  background-color: #4A90E2;
-  border-radius: 5%;
 }
 
 .grid2 {
@@ -73,39 +73,40 @@ main {
   }
 }
 
-/* Images */
-
-figure {
-  margin: 0 0 20px;
-  padding: 0;
-  display: inline-block;
-  max-width: 100%;
-}
-
-figure img {
+/* Grid for Login/Start Buttons */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 10px; /* Space between buttons */
   width: 100%;
-  height: auto;
-  display: block;
-  padding: 20px;
+  max-width: 500px;
+  margin: auto;
 }
 
-figcaption {
-  text-align: center;
-  font-size: 90%;
-  margin-top: 8px;
+.startbutton {
+  background-color:#4a90e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Defines button size */
+  width: 100%; /* Makes buttons fill their grid cell */
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.footer {
-  padding: 1%;
-  width: 100%;
-  background-color: #00174c;
-  color: #fffdf5;
-}
-
---LOGIN
+/* Form Styling */
 .contact-form-container,
 .login-container {
- margin: auto;
+  margin: auto;
   background-color: white;
   padding: 30px;
   border-radius: 8px;
@@ -138,9 +139,74 @@ textarea {
   color: #333;
 }
 
+/* Error Message */
 .error {
   color: red;
   text-align: center;
   font-size: 14px;
   display: none;
+}
+
+/* Footer */
+.footer {
+  padding: 1%;
+  width: 100%;
+  background-color: #00174c;
+  color: #fffdf5;
+}
+
+/* Images */
+figure {
+  margin: 0 0 20px;
+  padding: 0;
+  display: inline-block;
+  max-width: 100%;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 90%;
+  margin-top: 8px;
+}
+
+/*TABLE*/
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.password {
+  font-family: 'Courier New', monospace;
+}
+
+.important {
+  font-weight: bold;
+  color: #d32f2f; /* Red for important, but softer than before */
 }

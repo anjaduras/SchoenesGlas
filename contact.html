@@ -14,16 +14,15 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="navbutton" style=><i class="fa-solid fa-hand-point-left" style="text-align: left;"></i></a>
+      <a href="index.html" class="navbutton">🔙</a>
       <h1>Kontakt</h1>
-      <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche <i class="fa-solid fa-comments" style="color: #eeeeee;"></i></p>
+      <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche 💬</p>
     </header>
     <main class="container">
-      <form action="https://formsubmit.co/anna@duras.org" method="POST">
+      <form action="https://formsubmit.co/anna@duras.org" method="POST" class="login-container">
         <h2>Contact Us</h2>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -36,7 +35,10 @@
     <footer class="footer" onload="updateTime()">
       <p>©Gruppe 6, 2025</p>
       <p>Alle Rechte vorbehalten.</p>
-      <p class="time"><span style="color:#00ADB5;">Aktuelle Uhrzeit:</span> <span id="time"></span></p>
+      <p class="time">
+        <span style="color: #ffd500">Aktuelle Uhrzeit: </span
+        ><span id="time"></span>
+      </p>
     </footer>
     <script src="js/script.js"></script>
   </body>
