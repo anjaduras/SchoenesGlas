@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products</title>
+  <meta name="description" content="">
+  <meta name="author" content="G6">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="image.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+      <button><a href="index.html"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path></svg></a></button>
+    <button><a href="contact.html">Contact us</a></button>
+      <h1>Unsere Produkte</h1>
+      <h2>Lorem ipsum lorem ipsum</h2>
+    </header>
+    <main class="container">       
+        <p>...</p>
+        <div class="grid" style="grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto);">
+          <div class="grid-item"><img src="img/glasses.jpg" alt="Image 1"><p>Brillen</p></div>
+          <div class="grid-item"><img src="img/lenses.jpg" alt="Image 2"><p>Kontaktlinsen</p></div>
+          <div class="grid-item"><img src="img/sunglasses.jpg" alt="Image 3"><p>Sonnenbrillen</p></div>
+          <div class="grid-item"><img src="img/accessory.jpg" alt="Image 4"><p>Zubehör</p></div>
+      </div>
+    </main>
+    <footer class="footer" onload="updateTime()">
+      <p>©Gruppe 6, 2025</p>
+      <p>Alle Rechte vorbehalten.</p>
+      <p class="time">Aktuelle Uhrzeit: <span id="time"></span></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
