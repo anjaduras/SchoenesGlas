@@ -8,11 +8,11 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: #eeeeee;
+  background-color: #fffdf5;
 }
 
 .navbutton {
-  background-color: #00adb5;
+  background-color: #4A90E2;
   padding: 1%;
   border-color:#037e84;
   border-style: double;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbutton:hover{
-  background-color: #037e84;
+  background-color: #034c84;
   transition: 0.5s;
 }
 
@@ -36,15 +36,18 @@ h1 {
 }
 
 .subheader {
-  color: #00adb5;
+  color: #809BCE;
   font-size: 20px;
   font-weight: 600;
 }
-
+nav{
+  margin-top: 1%;
+  text-align: right;
+}
 header {
-  padding: 5%;
-  background-color: #222831;
-  color: #eeeeee;
+  padding: 100px;
+  background-color: #00174c;
+  color: #fffdf5;
 }
 
 main {
@@ -54,7 +57,7 @@ main {
 .startbutton {
   width: 200px;
   height: 200px;
-  background-color: #00adb5;
+  background-color: #4A90E2;
   border-radius: 5%;
 }
 
@@ -82,6 +85,49 @@ main {
 .footer {
   padding: 1%;
   width: 100%;
-  background-color: #222831;
-  color: #eeeeee;
+  background-color: #00174c;
+  color: #fffdf5;
+}
+
+--LOGIN
+.contact-form-container,
+.login-container {
+ margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  display: none;
 }

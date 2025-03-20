@@ -5,6 +5,25 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-// no idea whatsoever
-function login() {
-}
+    // Contact
+
+ // Login
+  
+  function handleAuth(event) {
+    event.preventDefault();
+  
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+  
+    const validUsername = 'user';
+    const validPassword = 'password';
+  
+    if (username === validUsername && password === validPassword) {
+      alert('Erfolgreich angemeldet!');
+      window.location.href = './workers.html';
+    } else {
+      errorMessage.textContent = 'Ungültiger Benutzername oder ungültiges Passwort. Bitte versuchen Sie es erneut.';
+    }
+  }
+  

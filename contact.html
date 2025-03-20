@@ -18,34 +18,20 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="navbutton"><i class="fa-solid fa-hand-point-left"></i></a>
+      <a href="index.html" class="navbutton" style=><i class="fa-solid fa-hand-point-left" style="text-align: left;"></i></a>
       <h1>Kontakt</h1>
       <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche <i class="fa-solid fa-comments" style="color: #eeeeee;"></i></p>
     </header>
     <main class="container">
-      <div class="">
-        <label for="name">Dein Name<span style="color: red;">*</span>:</label>
-        <input class="input" type="text" id="name" name="name" placeholder="Anja" required /><br /><br />
-
-        <label for="email">Email<span style="color: red;">*</span>:</label>
-        <input class="input" type="email" name="email" placeholder="beispiel@email.com" required /><br /><br />
-
-        <label for="category">Kategorie<span style="color: red;">*</span>:</label>
-        <select name="Choose category" id="Choose category">
-          <option value="Brillen">Brillen</option>
-          <option value="Kontaktlinsen">Kontaktlinsen</option>
-          <option value="Beratung">Beratung</option>
-          <option value="Reparatur">Reparatur</option>
-          <option value="Spezialanfertigungen">Spezialanfertigungen</option>
-          <option value="Sonstiges">Sonstiges</option>
-        </select><br /><br />
-
-        <label class="label" for="message">Dein Nachricht<span style="color: red;">*</span>:</label><br />
-        <textarea class="textarea" id="message" name="message" rows="4" placeholder="sei nett!" required></textarea><br /><br>
-        <button type="submit" value="Send">
-          <a href="">Senden <i class="fa-solid fa-paper-plane" style="color: #eeeeee;"></i></a>
-        </button>
-    </div>
+      <form action="https://formsubmit.co/anna@duras.org" method="POST">
+        <h2>Contact Us</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        <button type="submit">Send</button>
+    </form>
     </main>
     <footer class="footer" onload="updateTime()">
       <p>©Gruppe 6, 2025</p>

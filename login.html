@@ -14,27 +14,48 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="navbutton"><i class="fa-solid fa-hand-point-left"></i></a>
+      <a href="index.html" class="navbutton"
+        ><i class="fa-solid fa-hand-point-left"></i
+      ></a>
       <h1>Login</h1>
-      <p class="subheader">Zugang zum Mitarbeiterbereich schaffen <i class="fa-solid fa-key" style="color: #eeeeee;"></i></p>
+      <p class="subheader">
+        Zugang zum Mitarbeiterbereich schaffen
+        <i class="fa-solid fa-key" style="color: #eeeeee"></i>
+      </p>
     </header>
+
     <main class="container">
-        <div class="login-container">
-            <h2>Login</h2>
-            <input type="email" id="email" placeholder="beispiel@email.com" required><br><br>
-            <input type="password" id="password" placeholder="******" required><br><br>
-            <button onclick="login()"><a href="">Login</a></button>
-            <p id="error-message" style="color: red; display: none;">Invalid credentials, please try again.</p>
-        </div>
+      <div class="login-container">
+        <form id="authForm" onsubmit="handleAuth(event)">
+          <label for="username">Username</label
+          ><input type="text" id="username" name="username" required /><label
+            for="password"
+            >Password</label
+          ><input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><button type="submit">Zum Anmelden drücken</button>
+          <p id="error-message" class="error-message"></p>
+        </form>
+      </div>
     </main>
+
     <footer class="footer" onload="updateTime()">
       <p>©Gruppe 6, 2025</p>
       <p>Alle Rechte vorbehalten.</p>
-      <p class="time"><span style="color:#00ADB5;">Aktuelle Uhrzeit:</span><span id="time"></span></p>
+      <p class="time">
+        <span style="color: #00adb5">Aktuelle Uhrzeit:</span
+        ><span id="time"></span>
+      </p>
     </footer>
     <script src="js/script.js"></script>
   </body>
