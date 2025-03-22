@@ -11,7 +11,7 @@ body {
   background-color: #fffdf5;
 }
 
-/* Header and Navigation */
+/* Header & Nav */
 header {
   padding: 100px;
   background-color: #00174c;
@@ -23,7 +23,7 @@ nav {
   text-align: right;
 }
 
-/* Typography */
+/* Text */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -36,7 +36,7 @@ h1 {
   font-weight: 600;
 }
 
-/* Button Styles */
+/* Buttons */
 .navbutton {
   background-color: #4a90e2;
   padding: 1%;
@@ -73,12 +73,12 @@ main {
   }
 }
 
-/* Grid for Login/Start Buttons */
+/* Grid for LOGIN*/
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows */
-  gap: 10px; /* Space between buttons */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px; 
   width: 100%;
   max-width: 500px;
   margin: auto;
@@ -89,8 +89,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px; /* Defines button size */
-  width: 100%; /* Makes buttons fill their grid cell */
+  height: 150px; 
+  width: 100%; 
   border: none;
   font-size: 18px;
   font-weight: bold;
@@ -98,9 +98,10 @@ main {
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 8px;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease-in-out;
+}
+
+.startbutton:hover{
+  background-color:#4587d3;
 }
 
 /* Form Styling */
@@ -164,16 +165,20 @@ figure {
 }
 
 figure img {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: auto;
   display: block;
   padding: 20px;
+  border-radius: 30px;
 }
 
 figcaption {
   text-align: center;
-  font-size: 90%;
+  font-size: 25px;
   margin-top: 8px;
+  color: #00174c;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*TABLE*/
@@ -208,5 +213,5 @@ tr:hover {
 
 .important {
   font-weight: bold;
-  color: #d32f2f; /* Red for important, but softer than before */
+  color: #d32f2f; 
 }

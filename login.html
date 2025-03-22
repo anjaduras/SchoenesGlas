@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact</title>
+    <title>Login</title>
     <meta name="description" content="" />
     <meta name="author" content="G6" />
     <link rel="icon" href="/favicon.ico" />
@@ -23,23 +23,23 @@
     <main class="container">
       <div class="login-container">
         <form id="authForm" onsubmit="handleAuth(event)">
-          <label for="username">Username</label
-          ><input type="text" id="username" name="username" required /><label
+          <label for="email">Email<span style="color: red;">*</span></label
+          ><input type="text" id="email" name="username" required /><label
             for="password"
-            >Password</label
+            >Passwort<span style="color: red;">*</span></label
           ><input
             type="password"
             id="password"
             name="password"
             required
-          /><button type="submit">Zum Anmelden drücken</button>
+          /><button type="submit">ANMELDEN</button>
           <p id="error-message" class="error-message"></p>
         </form>
       </div>
     </main>
 
     <footer class="footer" onload="updateTime()">
-      <p>©Gruppe 6, 2025</p>
+      <p><span style="color: #ffd500">©</span>Gruppe 6, 2025</p>
       <p>Alle Rechte vorbehalten.</p>
       <p class="time">
         <span style="color: #ffd500">Aktuelle Uhrzeit: </span

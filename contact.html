@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact</title>
+    <title>Kontakt</title>
     <meta name="description" content="" />
     <meta name="author" content="G6" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="image.png" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,18 +17,31 @@
       <p class="subheader">Wir beantworten gerne Ihre Fragen und Wünsche 💬</p>
     </header>
     <main class="container">
-      <form action="https://formsubmit.co/anna@duras.org" method="POST" class="login-container">
-        <h2>Contact Us</h2>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-        <button type="submit">Send</button>
-    </form>
+
+    <form
+    action="https://formspree.io/f/xoveewnp"
+  method="POST"
+    class="login-container">
+    <h2>Kontaktformular</h2>
+    <label>
+      Name<span style="color: red;">*</span>
+      <input type="text" name="name" placeholder="Anja" required>
+    </label>
+    <label>
+      Email<span style="color: red;">*</span>
+      <input type="email" name="email" placeholder="beispiel@email.com" required>
+    </label>
+    <label>
+      Deine Nachricht<span style="color: red;">*</span>
+      <textarea name="message" placeholder="Sei bitte nett:)" required></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+  </form>
+
     </main>
     <footer class="footer" onload="updateTime()">
-      <p>©Gruppe 6, 2025</p>
+      <p><span style="color: #ffd500">©</span>Gruppe 6, 2025</p>
       <p>Alle Rechte vorbehalten.</p>
       <p class="time">
         <span style="color: #ffd500">Aktuelle Uhrzeit: </span
