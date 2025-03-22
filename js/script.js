@@ -41,3 +41,5 @@ setInterval(updateTime, 1000);
       });
     });
   });
+
+  // coded by Anna Duras, 03-2025
